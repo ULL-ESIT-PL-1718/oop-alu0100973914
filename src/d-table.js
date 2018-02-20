@@ -1,6 +1,8 @@
 var TCell = require("t-cell");
 var RCell = require("r-cell");
 var UnderlinedCell = require("underlined-cell");
+var StretchCell = require("stretch-cell");
+var InheritedStretchCell = require("inherited-stretch-cell");
 
 class DTable {
   constructor () {}
@@ -43,7 +45,7 @@ class DTable {
         if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
         else
-          return new TCell(String(value));
+					return new TCell(String(value));
       });
     });
     return [headers].concat(body);

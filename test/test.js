@@ -4,6 +4,8 @@ var assert = require('better-assert');
 var TCell = require("t-cell");
 var RCell = require("r-cell");
 var UnderlinedCell = require("underlined-cell");
+var StretchCell = require("stretch-cell");
+var InheritedStretchCell = require("inherited-stretch-cell");
 var Table = require("d-table");
 
 /**********************/
@@ -58,6 +60,47 @@ describe("UnderlinedCell", function() {
   })
 });
 
+/**********************************************/
+/*     StretchCell and InheritedStretchCell   */
+/**********************************************/
+
+var valueStretchCell = "My\nnew\ncell!";
+var expectedStretchCell = ['My    ', 'new   ', 'cell! ', '      '];
+var widthStretchCell = 6, heightStretchCell = 4; 
+
+describe("StretchCell", function() {
+	it("Creation of StretchCell", function() {
+		var stretchCell = new StretchCell(new TCell(valueStretchCell), 6, 4);
+		
+		should(stretchCell instanceof StretchCell).be.exactly(true);
+		should(stretchCell instanceof TCell).be.exactly(false);
+		assert(widthStretchCell === stretchCell.minWidth());
+		assert(heightStretchCell === stretchCell.minHeight());
+		assert(
+				JSON.stringify(stretchCell.draw(stretchCell.minWidth(), stretchCell.minHeight())) ==
+				JSON.stringify(expectedStretchCell)
+		);
+	})
+});
+
+var valueISC = "My\npretty\nnew\ncell!";
+var expectedISC = ['My      ', 'pretty  ', 'new     ', 'cell!   '];
+var widthISC = 8, heightISC = 4;
+
+describe("InheritedStretchCell", function() {
+	it("Creation of InheritedStretchCell", function() {
+		var inheritedSC = new InheritedStretchCell(valueISC, 8, 1);
+
+		should(inheritedSC instanceof InheritedStretchCell).be.exactly(true);
+		should(inheritedSC instanceof TCell).be.exactly(true);
+		assert(widthISC === inheritedSC.minWidth());
+		assert(heightISC === inheritedSC.minHeight());
+		assert(
+				JSON.stringify(inheritedSC.draw(inheritedSC.minWidth(), inheritedSC.minHeight())) ==
+				JSON.stringify(expectedISC)
+		);
+		})
+});
 
 /**********************/
 /*        Table       */
