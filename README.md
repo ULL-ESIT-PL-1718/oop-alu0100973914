@@ -19,7 +19,7 @@ var inheritedStretchCell = new InheritedStretchCell("Hello!", 8, 2);
 **StretchCell** works in the same way of InheritedStretchCell. However, this class encapsulates a reference to
 a TCell object, instead of extends TCell class. Therefore,  a TCell object must be given as a parameter to the constructor. Example of creation:
 ```js
-var stretchCell = new StretchCell("Hi!", 4, 3);
+var stretchCell = new StretchCell(new TCell("Hi!"), 4, 3);
 ```
 
 The tests created to check the behaviour of this new type of cell are located in tests/test.js file.
