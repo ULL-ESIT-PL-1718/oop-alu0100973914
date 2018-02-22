@@ -42,7 +42,9 @@ class DTable {
       return keys.map(function(name) {
         var value = row[name];
 
-        if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
+				if (value.constructor.name === 'Object') {
+					return new StretchCell(new TCell((String(value.c) || "NULL")), (value.w || 1), (value.h || 1));
+				} else if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
         else
 					return new TCell(String(value));
