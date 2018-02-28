@@ -1,5 +1,6 @@
 # Practice 2 of PL: OOP
 [![Build Status](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100973914.svg?token=S9Gezg46GoVeGRv4GwA9&branch=master)](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100973914)
+[![npm version](https://badge.fury.io/js/%40alu0100973914%2Foop.svg)](https://badge.fury.io/js/%40alu0100973914%2Foop)
 
 In this practice we have designed a new type of Cell for the **Laying out a table** example of the sixth chapter of EloquentJS.
 
@@ -36,14 +37,13 @@ To check the coverage of the code developed during this practice, I executed the
 gulp cover
 ```
 
-Then the coverage folder was created with the results of the operation in some HTML files, and i was able to serve the results of the analysis executing the next commands:
+Then the coverage folder was created with the results of the operation in some HTML files, and i was able to see the results of the analysis executing the next commands:
 ```bash
 npm i node-static -g
 static -p 8080 -a 10.6.129.67
 ```
 Visiting the 10.6.129.67:8080/coverage direction using a browser i could see the results:
 ![coverage](screens/coverage.png)
-[See](https://ull-esit-pl-1718.github.io/oop-alu0100973914/)
 
 ## Modification
 The modification was develop in a new branch of this repo: **modification**
@@ -51,3 +51,6 @@ The modification was develop in a new branch of this repo: **modification**
 ## Package publication
 * [@alu0100973914/oop](https://www.npmjs.com/package/@alu0100973914/oop)
 * [Test repository](https://github.com/ULL-ESIT-PL-1718/prueba-oop-alu0100973914.git)
+
+## Code documentation
+To see the code documentation click [here](https://ull-esit-pl-1718.github.io/oop-alu0100973914/).
