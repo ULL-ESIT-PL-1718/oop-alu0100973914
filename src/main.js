@@ -1,5 +1,5 @@
-var input = require("input.json");
-var DTable = require("d-table");
+var input = require("./input.json");
+var DTable = require("./d-table.js");
 
 debugger;
 

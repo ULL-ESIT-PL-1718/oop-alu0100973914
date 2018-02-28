@@ -1,7 +1,8 @@
 {
-  "name": "oop",
-  "version": "1.0.0",
+  "name": "@alu0100973914/oop",
+  "version": "1.0.4",
   "description": "examples of inheritance in object oriented programming.",
+  "main": "index.js",
   "scripts": {
     "start": "NODE_PATH=./src node src/main.js",
     "cover": "NODE_PATH=./src nyc mocha --require should",
@@ -9,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ULL-ESIT-GRADOII-PL/OOP.git"
+    "url": "git@github.com:ULL-ESIT-PL-1718/oop-alu0100973914.git"
   },
   "keywords": [
     "js",
@@ -17,12 +18,11 @@
     "travis",
     "istanbul"
   ],
-  "author": "Casiano Rodríguez León",
-  "license": "MIT",
+  "author": "Daute Rodríguez Rodríguez",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/issues"
+    "url": "https://github.com/ULL-ESIT-PL-1718/oop-alu0100973914/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/blob/structure/README.md",
+  "homepage": "https://github.com/ULL-ESIT-PL-1718/oop-alu0100973914",
   "devDependencies": {
     "better-assert": "^1.0.2",
     "coveralls": "^3.0.0",

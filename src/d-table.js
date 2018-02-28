@@ -1,8 +1,8 @@
-var TCell = require("t-cell");
-var RCell = require("r-cell");
-var UnderlinedCell = require("underlined-cell");
-var StretchCell = require("stretch-cell");
-var InheritedStretchCell = require("inherited-stretch-cell");
+var TCell = require("./t-cell.js");
+var RCell = require("./r-cell.js");
+var UnderlinedCell = require("./underlined-cell.js");
+var StretchCell = require("./stretch-cell.js");
+var InheritedStretchCell = require("./inherited-stretch-cell.js");
 
 class DTable {
   constructor () {}
