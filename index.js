@@ -9,6 +9,7 @@ module.exports = {
 	TCell: TCell,
 	RCell: RCell,
 	UnderlinedCell: UnderlinedCell,
+	StretchCell: StretchCell,
 	InheritedStretchCell: InheritedStretchCell,
 	DTable: DTable
 }

@@ -47,3 +47,7 @@ Visiting the 10.6.129.67:8080/coverage direction using a browser i could see the
 
 ## Modification
 The modification was develop in a new branch of this repo: **modification**
+
+## Package publication
+* [@alu0100973914/oop](https://www.npmjs.com/package/@alu0100973914/oop)
+* [Test repository](https://github.com/ULL-ESIT-PL-1718/prueba-oop-alu0100973914.git)
