@@ -69,6 +69,7 @@ Now the users of the package can add it's own types of cell without modifying th
 	var module = require("@alu0100973914/oop");
 
 	class ChuchuCell {
-	........
+	
+	}
 	module.Registry.addMapClass("ChuchuCell", ChuchuCell);
 ```
