@@ -66,7 +66,7 @@ To see the code documentation click [here](https://ull-esit-pl-1718.github.io/oo
 ## Open / Closed Principle
 Now the users of the package can add it's own types of cell without modifying the code, they have to use the methods of the registry class **addMapClass** and **findClass**. These two methods are exported as a part of the module.
 ```js
-	var module = require("@alu0100973914/oop);
+	var module = require("@alu0100973914/oop");
 
 	class ChuchuCell {
 	........
