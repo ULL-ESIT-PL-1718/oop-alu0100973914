@@ -10,7 +10,7 @@ class TCell {
 	 * @param {String} text Content of the new cell.
 	 */
 	constructor(text) {
-    this.text = text.split("\n");
+    this.text = text.toString().split("\n");
   }
 	
 	/**
@@ -61,5 +61,10 @@ class TCell {
     return this.text.length;
   };
 }
+
+const { addMapClass, findClass } = require('./registry-class.js');
+
+addMapClass('String', TCell);
+addMapClass('TCell', TCell);
 
 module.exports = TCell

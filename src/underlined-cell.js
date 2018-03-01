@@ -27,4 +27,8 @@ class UnderlinedCell extends TCell {
   }
 }
 
+const { addMapClass, findClass } = require('./registry-class.js');
+
+addMapClass('UnderlinedCell', UnderlinedCell);
+
 module.exports = UnderlinedCell

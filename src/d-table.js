@@ -4,6 +4,8 @@ var UnderlinedCell = require("./underlined-cell.js");
 var StretchCell = require("./stretch-cell.js");
 var InheritedStretchCell = require("./inherited-stretch-cell.js");
 
+const { addMapClass, findClass } = require('./registry-class.js');
+
 /**
  * Represents a table compound by different kind of cells
  */
@@ -63,11 +65,8 @@ class DTable {
     var body = data.map(function(row) {
       return keys.map(function(name) {
         var value = row[name];
-
-        if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
-          return new RCell(String(value));
-        else
-					return new TCell(String(value));
+				var {currClass, params} = findClass(value);
+				return new currClass(...params);
       });
     });
     return [headers].concat(body);

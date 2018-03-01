@@ -30,4 +30,9 @@ class RCell extends TCell {
   }
 }
 
+const { addMapClass, findClass } = require('./registry-class.js');
+
+addMapClass('Number', RCell);
+addMapClass('RCell', RCell);
+
 module.exports = RCell

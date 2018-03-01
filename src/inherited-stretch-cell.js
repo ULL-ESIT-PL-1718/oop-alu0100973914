@@ -50,4 +50,8 @@ class InheritedStretchCell extends TCell{
 	}
 }
 
+const { addMapClass, findClass } = require('./registry-class.js');
+
+addMapClass('InheritedStretchCell', InheritedStretchCell);
+
 module.exports = InheritedStretchCell

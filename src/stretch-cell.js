@@ -7,7 +7,7 @@ class StretchCell {
 	 * Constructs a new StretchCell with the given string as the content
 	 * of the wrapped cell.
 	 *
-	 * @param {String} text Content of the wrapped cell.
+	 * @param {Objet} inner Wrapped cell.
 	 * @param {Number} width Width of the StretchCell.
 	 * @param {Number} height Height of the StretchCell.
 	 */
@@ -46,5 +46,9 @@ class StretchCell {
 		return this.inner.draw(width, height);
 	}
 }
+
+const { addMapClass, findClass } = require('./registry-class.js');
+
+addMapClass('StretchCell', StretchCell);
 
 module.exports = StretchCell

@@ -45,12 +45,30 @@ static -p 8080 -a 10.6.129.67
 Visiting the 10.6.129.67:8080/coverage direction using a browser i could see the results:
 ![coverage](screens/coverage.png)
 
-## Modification
+## Modification for practice 2
 The modification was develop in a new branch of this repo: **modification**
+
+# Practice 3 of PL: NPM modules
+
+## Combined repository
+[Repository](https://github.com/ULL-ESIT-PL-1718/prueba-oop-alu0100973914.git) containing the tests for the module, and this is the [main repository](https://github.com/ULL-ESIT-PL-1718/npm-modules-alu0100973914.git) which contains both.
 
 ## Package publication
 * [@alu0100973914/oop](https://www.npmjs.com/package/@alu0100973914/oop)
 * [Test repository](https://github.com/ULL-ESIT-PL-1718/prueba-oop-alu0100973914.git)
 
+## Npm package badge
+A npm package badge have been added to the this README.md.
+
 ## Code documentation
 To see the code documentation click [here](https://ull-esit-pl-1718.github.io/oop-alu0100973914/).
+
+## Open / Closed Principle
+Now the users of the package can add it's own types of cell without modifying the code, they have to use the methods of the registry class **addMapClass** and **findClass**. These two methods are exported as a part of the module.
+```js
+	var module = require("@alu0100973914/oop);
+
+	class ChuchuCell {
+	........
+	module.Registry.addMapClass("ChuchuCell", ChuchuCell);
+```
