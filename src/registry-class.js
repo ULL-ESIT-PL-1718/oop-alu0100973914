@@ -20,10 +20,6 @@ let findClass = (value) => {
 		else throw "Error at: "+inspect(value)+"  'type'  and 'params' attributes are required"
 	}
 
-	console.log(className);
-	console.log(currClass);
-	console.log(params);
-
 	return {className, currClass, params};
 };
 
