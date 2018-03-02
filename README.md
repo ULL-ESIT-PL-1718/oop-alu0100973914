@@ -46,7 +46,7 @@ Visiting the 10.6.129.67:8080/coverage direction using a browser i could see the
 ![coverage](screens/coverage.png)
 
 ## Modification for practice 2
-The modification was develop in a new branch of this repo: **modification**
+The modification was developed in a new branch of this repo: **modification**
 
 # Practice 3 of PL: NPM modules
 
@@ -73,3 +73,7 @@ Now the users of the package can add it's own types of cell without modifying th
 	}
 	module.Registry.addMapClass("ChuchuCell", ChuchuCell);
 ```
+
+## Practice class Challenge
+* [This repository](https://github.com/ULL-ESIT-PL-1718/alu0100973914-ColorCell-oop-plugin.git) contains the source of the practice class challenge.
+* [NPM publication](https://www.npmjs.com/package/@alu0100973914/colorcell-oop-plugin)
