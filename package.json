@@ -1,6 +1,6 @@
 {
   "name": "@alu0100973914/oop",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "examples of inheritance in object oriented programming.",
   "main": "index.js",
   "scripts": {

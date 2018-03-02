@@ -13,8 +13,8 @@ class StretchCell {
 	 */
 	constructor(inner, width, height) {
 		this.inner = inner;
-		this.width = width;
-		this.height = height;
+		this.width = width || 10;
+		this.height = height || 2;
 	}
 
   /**

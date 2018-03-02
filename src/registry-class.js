@@ -13,11 +13,17 @@ let findClass = (value) => {
 		params = [String(value)];
 	else if (className === 'Object') {
 		if (value.type && value.params) {
-			let {className, currClass} = findClass(value.params[0]);
-			params = [new currClass(value.params[0]), ...value.params.slice(1)];
+			//let {className, currClass} = findClass(value.params[0]);
+			//params = [new currClass(value.params[0]), ...value.params.slice(1)];
+			params = value.params;
 		}
 		else throw "Error at: "+inspect(value)+"  'type'  and 'params' attributes are required"
 	}
+
+	console.log(className);
+	console.log(currClass);
+	console.log(params);
+
 	return {className, currClass, params};
 };
 

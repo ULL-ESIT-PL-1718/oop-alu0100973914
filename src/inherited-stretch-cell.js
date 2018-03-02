@@ -16,8 +16,8 @@ class InheritedStretchCell extends TCell{
 	 */
 	constructor(text, width, height) {
 		super(text);
-		this.width = width;
-		this.height = height;
+		this.width = width || 10;
+		this.height = height || 2;
 	}
 
   /**
